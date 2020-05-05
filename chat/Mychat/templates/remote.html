@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHAT ALGORİTMS</title>
+</head>
+<body style="background-color:black; color:green;">
+
+<div class="container" style="margin:100px 0px 0px 400px;">
+    <form action="{% url 'client'%}" name="" method="post">
+    {% csrf_token%}
+    <button style="font-size:20px;background:none; color:green; border:2px solid green;padding:5px;" type="submit">SEND !!</button>
+    <input style="width:400px; height:30px; background:none; color:green; border:2px solid green; font-size:17px;" type="text" placeholder="LOGİN COMMAND" name="messages">
+    <a href="{% url 'close'%}" style="font-size:17px;background:none; color:red; border:2px solid red;padding:5px;" type="submit">LOG OUT</a>
+    <p>REMOTE COMPUTER CONTROL WİTH DJANGO AND SOCKET LİBRARY</p>
+    <a  style="color:green;" href="https://www.instagram.com/freedom.code/" target="_blank">@freedom.code</a><br>
+    <p style="color:red;">***********OUTPUT***********</p>
+    <textarea style="background:none;color:green;border:2px solid red; font-size:15px;" rows="20" cols="80">{{completede}}{{OUTPUT}}</textarea>
+</form>
+
+</div>
+
+</body>
+</html>
